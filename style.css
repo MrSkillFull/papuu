@@ -80,40 +80,91 @@ footer{
     width: 100%;
     background-color: var(--varBgColor);
     color: var(--varFontColor);
-    height: 130px;
+    height: auto;
 }
 .footer-contacts{
-    max-width: 350px;
+    gap: 30px;
+    display: flex;
+    width: 50%;
 }
 .copyright{
-    transition: 1s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    width: 50%;
     text-align: center;
 }
 .copyright p{
-    transition: 1s;
     background-color: var(--varBgColor);
     color: var(--varFontColor);
     padding: 0 10px;
     border-radius: 20px;
 }
-.copyright p:hover{
-    transition: 1s;
-    background-color: var(--varFontColor);
-    color: var(--varBgColor);
-    padding: 0 10px;
-    border-radius: 20px;
-}
-.vertical-line{
-    position: relative;
-    left: 20px;
-    width: 2px;
-    height: 100%;
-    background-color: var(--varFontColor);
-}
 .contact-linkedin a{
     color: var(--varFontColor);
+}
+.fake-link{
+    margin-top: 20px;
+    color: rgb(78, 78, 241);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.fake-link:active{
+    color: red;
+}
+section.create-account{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.859);
+    text-align: center;
+}
+section.create-account form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+}
+section.create-account form input[type=text],
+section.create-account form input[type=password]{
+    margin: 20px;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 0 10px;
+    border: 2px solid black;
+}
+section.create-account form input[type=submit]{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+section.create-account form input[type=submit]:hover{
+    background-color: white;
+    color: black;
+}
+@media screen and (max-width:1035px) {
+    footer{
+        display: block;
+    }
+    .footer-contacts{
+        width: 100%;
+    }
+    .copyright{
+        width: 100%;
+    }
+}
+@media  screen and (max-width:528px) {
+    .footer-contacts{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
 }
