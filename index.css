@@ -31,8 +31,7 @@ main{
     margin: auto;
 }
 .main-section-content img{
-    height: 200px;
-    max-width: 100%;
+    max-width: 70%;
     margin: auto;
 }
 .main-section-content p{
