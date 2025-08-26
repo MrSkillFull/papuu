@@ -62,6 +62,7 @@ main{
     justify-content: center;
 }
 .main-section-footer-hyperlinks a{
+    transition: 1s;
     color: var(--fontColor);
     text-decoration: none;
     font-weight: 700;
@@ -90,7 +91,7 @@ main{
     border: 1px solid var(--fontColor);
 }
 .invite-section{
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 0px 20px 20px 50px;
     display: flex;
     width: 100%;
@@ -153,4 +154,36 @@ main{
     background-color: var(--fontColor);
     color: var(--bgColor);
     border: 1px solid var(--bgColor);
+}
+.about-section{
+    margin: 200px 0 200px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.about-section-content h2{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+}
+.about-section-content p{
+    width: 90%;
+    font-size: 1.5rem;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 40px;
+
+}
+.about-section-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.about-section-image{
+    display: flex;
+    justify-content: center;
+}
+.about-section-image img{
+    max-width: 400px;
 }
